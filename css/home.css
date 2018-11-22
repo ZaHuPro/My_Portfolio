@@ -1,0 +1,114 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #395b7f;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-image: url(../img/bg.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 1500px;
+}
+
+.NavBar {
+  background-color: rgba(145, 145, 145, 0.253);
+  height: 50px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contentMain {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.content {}
+
+.HeaderMain {
+  height: 80vh;
+  text-align: center;
+}
+
+.BoxMe {}
+
+.hello {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: bolder;
+  background-color: #f23c50;
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  max-width: 200px;
+  margin: auto;
+  width: min-content;
+}
+
+.myName {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 70px;
+  font-weight: bolder;
+  margin: 0%;
+  color: #FFCB05;
+}
+
+.intro-text {
+  font-family: "Hammersmith One", sans-serif;
+  margin-top: -20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.lead {
+  color: #FFCB05;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.btnResume {
+  text-align: center;
+  font-weight: 500;
+  max-width: 250px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #F23C50;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: px;
+  -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+.btnResume:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.summery {
+  font-size: 20px;
+  max-width: 700px;
+  text-align: justify;
+  background-color: #F23C50;
+  padding: 20px;
+}
+
+.social {
+  background-color: #F23C50;
+  min-width: 400px;
+  margin-top: 80px;
+}
+
+.social img {
+  min-width: 50px;
+  max-height: 60px;
+  padding: 15px;
+}
+
+.social img:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
