@@ -13,6 +13,7 @@
   <!-- Bootstrap CSS and Jquery JS -->
   <link rel="stylesheet" href="./std/bootstrap.min.css" />
   <script type="text/javascript" src="./std/jquery.min.js"></script>
+  <script type="text/javascript" src="./std/anime.min.js"></script>
 
   <!-- Sytle and JS Files -->
   <link rel="stylesheet" href="./css/home.css" />
@@ -21,58 +22,106 @@
   <!-- Fonts and Icons -->
   <link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Josefin+Sans" rel="stylesheet" />
 
-  <title>ZaHuPro - Web Developer and Machine Learning Engineer</title>
+  <title>Zakir Hussain || Software Engineer - Portfolio Website</title>
 </head>
 
 <body class="container-fluid">
-
-  <div class="NavBar row align-items-center justify-content-between">
-    <div class="brand col-2">dddd</div>
-    <div class="menu col-2">ddd</div>
+  <div class="bg"></div>
+  <div id="Nav" class="NavBar row align-items-center justify-content-around">
+    <div class="brand col-2"><span> zahu.in </span></div>
+    <div class="menu col">
+      <span role="0" class="menulist activemenu">Intro</span>
+      <span role="1" class="menulist">Experience</span>
+      <span role="2" class="menulist">Portfolio</span>
+      <span role="3" class="menulist">Hire Me</span>
+    </div>
   </div>
 
-
   <div class="HeaderMain row align-items-center justify-content-end">
-    <div class="Header col-6">
+    <div class="HeaderImg col-sm-6"><img src="./img/devil-circle.svg" /></div>
+    <div class="Header col-sm-6">
       <div class="BoxMe">
         <h3 class="hello">Hello, I'm</h3>
       </div>
 
-      <h1 class="myName">Zakir Hussain</h1>
+      <h1 class="myName"><span>Za</span>kir <span>Hu</span>ssain</h1>
 
       <div class="intro-text">
         and I'm a <span class="lead" id="typed"></span>
       </div>
 
       <div class="social">
-        <img src="./img/facebook.svg" />
-        <img src="./img/instagram.svg" />
-        <img src="./img/youtube.svg" />
-        <img src="./img/linkedin.svg" />
-        <img src="./img/github.svg" />
-        <img src="./img/google-plus.svg" />
+        <img src="./img/facebook.svg" /> <img src="./img/instagram.svg" />
+        <img src="./img/youtube.svg" /> <img src="./img/linkedin.svg" />
+        <img src="./img/github.svg" /> <img src="./img/google-plus.svg" />
       </div>
-      <!-- <div class="btnResume">Download Resume</div>
-
-
       <p class="summery">
-        I am Jakir Hussain from Chennai, I am from the mechanical department but I have a big passion for Software
-        Development. Currently working as Software Developer in Image Processing before that worked as Quality Control
-        Inspector and Freelance Web Developer. I am also certified in project planning management (PPM) and earned PDUs
-        of 144.
-      </p> -->
-
+        Currently Working as a Software Engineer and Doing Freelance Work on
+        My Free Time.
+      </p>
+      <div class="btnResume" id="resume">Download Resume</div>
     </div>
   </div>
 
   <div class="contentMain row align-items-center justify-content-center">
-    <div class="content col">
+    <div class="content col-6">
 
-      <div class="introMain row align-items-center justify-content-center">
-        <div class="intro col-sm">
+    </div>
+  </div>
+  <div class="contactMain row align-items-center justify-content-center">
+    <div class="contactInfo col-6-sm">
+
+
+    </div>
+    <div class="contactForm col-6-sm">
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
         </div>
-      </div>
-
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <!-- <button type="submit" class="btn btnResume btn-primary">Sign in</button> -->
+        <div class="btnResume">Push Email</div>
+      </form>
     </div>
   </div>
 </body>

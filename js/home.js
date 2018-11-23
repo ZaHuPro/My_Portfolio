@@ -1,5 +1,75 @@
 $(document).ready(function () {
 
+    var pathname = window.location.pathname; // Returns path only
+    var url = new URL(window.location.href); // Returns full URL
+    var origin = window.location.origin; // Returns base URL
+
+
+    $(".menulist").on("click", function () {
+        var IndexVal = $(this).attr("role");
+        console.log(IndexVal);
+        ScrollUpdateByMenuClick(IndexVal);
+        $(".menulist").removeClass("activemenu");
+        $(this).addClass("activemenu")
+    });
+
+
+    function ScrollUpdateByMenuClick(Condition) {
+        var Input = Condition;
+        var position;
+        switch (Condition) {
+            case "0":
+                position = 0;
+                break;
+            case "1":
+                position = 500;
+                break;
+            case "2":
+                position = 1000;
+                break;
+            case "3":
+                position = 1500;
+                break;
+
+        }
+        console.log(position);
+        $('html, body').animate({
+            scrollTop: position
+        }, 800)
+    }
+
+    $("#resume").on("click", function () {
+        var redirectWindow = window.open(pathname + "data/resume.pdf", "Zakir Hussain Resume", "");
+        redirectWindow.location;
+    });
+
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        // $("#Nav").animate({
+        //     top: scroll
+        // }, 150, function () {
+        //     console.log("Moved")
+        // });
+
+        MoveNav(scroll);
+        // if (scroll < 100 && scroll != 0) {
+        //     var R = scroll * 0.005;
+        //     R += 0.5;
+        //     MoveNav(scroll, R);
+        //     console.log(R);
+    });
+
+
+    function MoveNav(TopVal) {
+        anime({
+            targets: '#Nav',
+            top: TopVal,
+            duration: 1000,
+            easing: 'easeInOutSine'
+        });
+
+    }
+
     // <--Home Page Text Change -->
 
     ! function ($) {
@@ -228,7 +298,7 @@ $(document).ready(function () {
     $(function () {
 
         $("#typed").typed({
-            strings: ["Web Developer", "Experienced Freelancer", "Mechanical Engineer", "Software Developer", "NodeJS Developer", "Expert in Image Processing"], //Strings to display when typing
+            strings: ["Web Developer", "Experienced Freelancer", "Mechanical Engineer", "Machine Learning Engineer", "Software Developer", "NodeJS Developer", "Expert in Image Processing"], //Strings to display when typing
             typeSpeed: 40,
             backDelay: 600,
             loop: true,
